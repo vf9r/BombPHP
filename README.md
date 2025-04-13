@@ -5,9 +5,9 @@ some features that i've produced that i think are pretty cool:
 - .env parsing
 - database instance with driver parameter
 - autoloading
+- routing
 
 plans:
-- routing
 - custom template engine
 - cross-driver compatibility db abstraction
 - built in xss/sql injection prevention
