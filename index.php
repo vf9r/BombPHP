@@ -1,14 +1,8 @@
 <?php
 require_once $_SERVER["DOCUMENT_ROOT"] . "/App/Core/Framework.php";
 use App\Core\Database;
+use App\Core\Route;
 
-Database::hi();
-$pdo = new Database("PDO");
+require_once $_SERVER["DOCUMENT_ROOT"] . '/App/Routes/web.php';
+Route::dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);
 ?>
-
-<style>
-    * {
-    background-color:black;
-    color:white;
-    }
-</style>
